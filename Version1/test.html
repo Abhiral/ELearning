@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hide {
+	height: 200px;
+    width: 500px;
+    background-color: red;
+  display: none;
+  position: absolute;
+  left:200px;
+  top: 0;
+  color: #fff;
+  z-index: 999;
+}
+.myDIV{
+position: relative;
+background-color: green;
+height: 200px;
+width: 500px;
+color: #fff;
+}
+.cover{
+	position: relative;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+
+<div class="cover">
+    <div class="myDIV">Hover over me.</div>
+    <div class="hide">I am shown when someone hovers over the div above.</div>
+</div>
+
+</body>
+</html>

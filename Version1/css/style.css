@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .header-container{
     padding: 5px 15px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
@@ -122,6 +127,23 @@
     display: inline-block;
     padding: 0px 7px;
     white-space: nowrap;
+    font-weight: 500;
+}
+
+.product-des-cover{
+    max-width: 375px;
+    margin: 20px 0;
+}
+.product-des-cover a{
+  text-decoration: none;
+  color: #000;
+}
+.product-des-cover a:hover{
+  color: purple;
+}
+
+.product-des-cover .card{
+  padding: 20px;
 }
 
 .nav-bar ul, .footer-container ul{
@@ -159,6 +181,7 @@
 
 
 footer{
+    margin-top: auto;
     background-color: #fff;
     border-top: 1px solid #ddd;
 }
@@ -178,6 +201,10 @@ footer{
 .footer-container p{
   text-align: end;
   margin-bottom: 0;
+}
+
+.footer-container .space-top{
+    margin-top: 15px;
 }
 
 .site-info {
@@ -321,25 +348,85 @@ footer{
 } 
 /* ============ small devices .end// ============ */
 
-.signup-form-cover .space{
-  margin: 20px;
-}
-
-.signup-form-cover{
-  max-width: 450px;
-  margin: 0 auto; 
-  padding: 25px;
-}
-
-.signup-form-cover h6{
+.signup-form-cover .space, .login-form-cover .space{
   padding: 20px;
 }
 
-.signup-form-cover form input{
-  margin: 0 20px 5px 20px;
+.signup-form-cover, .login-form-cover{
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+.signup-form-cover h6, .login-form-cover h6{
+   font-weight: 700;
+}
+
+.signup-form-cover form{
+      position: relative;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+}
+
+ .login-form-cover form{
+  position: relative;
+  border-top: 1px solid #ddd;
+ }
+
+.signup-form-cover form .fa, .login-form-cover form .fa{
+    position: absolute;
+    left: 33px;
+    color: #6a6f73;
+}
+
+.signup-form-cover form .fa-user, .login-form-cover form .fa-envelope{
+    top: 30px;
+}
+
+.signup-form-cover form .fa-envelope, .login-form-cover form .fa-lock{
+    top: 74px;
+}
+
+.signup-form-cover form .fa-lock{
+    top: 119px;
+}
+
+
+.signup-form-cover form input[type=text], .signup-form-cover form input[type=email], .signup-form-cover form input[type=password], .signup-form-cover .space button, .login-form-cover form input[type=email], .login-form-cover form input[type=password], .login-form-cover .space button{
+  margin-bottom: 8px;
   width: 100%;
-  padding: 5px 10px;
+  padding: 5px 40px;
   border: 1px solid #000;
   border-radius: 5px;
+}
+
+.signup-form-cover .space .row{
+    padding: 8px 0;
+}
+
+.signup-form-cover .space label{
+  text-align: justify;
+}
+
+.signup-form-cover .space button{
+    background-color: #000;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+ .login-form-cover .space button{
+    background-color: #000;
+    font-weight: 700;
+    color: #fff;
+ }
+
+.signup-form-cover .space small{
+    font-size: 10px;
+}
+
+.signup-form-cover p{
+  padding: 20px 0;
+   text-align: center;
 }
 
