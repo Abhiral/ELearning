@@ -68,7 +68,7 @@ body{
     width: 100%;
     color: #fff;
     background-color: #000;
-    border: 1px solid #2896a9;
+    border: 1px solid #000;
     padding: 3px 10px;
     border-radius: 15px;
     font-weight: 700;
@@ -87,6 +87,23 @@ body{
 .content-cover h2{
       margin-bottom: 20px;
 }
+
+.product-des-cover{
+  display: none;
+  position: absolute;
+  min-width: 300px;
+  left:265px;
+  top: 0;
+  z-index: 999;
+}
+.column, .product-cover{
+  position: relative;
+}
+
+.product-cover:hover + .product-des-cover{
+  display: block;
+}
+
 
 .product-cover a{
     text-decoration: none;
@@ -130,6 +147,23 @@ body{
     font-weight: 500;
 }
 
+.update-status, .update-date{
+  color: green;
+  font-size: 13px;
+}
+.update-date{
+  font-weight: 600;
+}
+
+.course-info span{
+    font-size: 11px;
+    color: #6a6f73;
+    padding-right: 4px;
+}
+.course-info span .fa-circle{
+  font-size: 4px;
+}
+
 .product-des-cover{
     max-width: 375px;
     margin: 20px 0;
@@ -143,7 +177,35 @@ body{
 }
 
 .product-des-cover .card{
-  padding: 20px;
+  padding: 10px;
+}
+
+.product-des-cover ul{
+    list-style: none;
+}
+
+.product-des-cover ul li:before {
+  color: #000;
+  content: "\2713";
+  display: inline-block;
+  margin-left: -25px;
+  width: 25px;
+}
+
+.cart-section button{
+    padding: 5px 40px;
+    color: #fff;
+    background-color: #000;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.cart-section span{
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px 9px;
+    font-size: 18px;
+    color: dimgray;
 }
 
 .nav-bar ul, .footer-container ul{
